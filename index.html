@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    </script>
+    <style type="text/css">
+        .navbar, .banner, .let-start, .companies, .footer{
+            background-color: #03386F;
+        }
+        .banner-content{
+            margin-top:10rem;
+        }
+        .courses, .let-start, .companies, .footer{
+            padding:40px 0px;
+        
+        }
+        .course-list{
+            list-style-type:none;
+            padding:0;
+            display:inline-flex;
+        }
+        .course-list .fa{
+            font-size:50px;
+            font-weight:900;
+            padding:20px 0px;
+            color:#03386F;
+        }
+        .course-list li{
+            width:20%;
+            padding:20px 40px;
+            margin:10px;
+            background-color:lightcyan;
+        }
+        .course-list h3{
+            font-weight:400;
+        }
+        .course-list p{
+            font-size:20px;
+            font-weight:100;
+        }
+        .course-list a{
+            text-decoration: none;
+            color:#03386F;
+        }
+        .course-list a:hover{
+            text-decoration: underline;
+        }
+        .projects{
+            padding:40px 70px;
+        }
+        .card-header{
+            background-color:lightcyan;
+            color:#03386F;
+        }
+        .btn:not(.disabled), .card-header{
+            background-color:#03386F;
+        }
+        .companies h1{
+            margin:0px 0px 40px 0px;
+        }
+        .companies-list{
+            list-style-type: none;
+            padding:0;
+            display:inline-flex;
+        }
+        .companies-list li{
+            margin:0px 20px;
+        }
+        .courseList li, .social-media{
+            list-style-type: none;
+            padding:0;
+            line-height:2;
+        }
+        .courseList a{
+            text-decoration: none;
+        }
+        .courseList a:hover{
+            text-decoration: underline;
+        }
+        .social-media{
+            display:inline-flex;
+        }
+        .support a{
+            color:#ffffff;
+            text-decoration: none;
+            line-height: 2;
+        }
+        .social-media li:not(:first-child){
+            margin:0px 10px;
+        }
+        .social-media li:first-child{
+            margin-right:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid0">
+        <!-- code for navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="logo.png" height="40px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- code for banner -->
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="banner-content">
+                            <h1 class="text-light">Learn any course for free in your own Language</h1>
+                            <button class="btn btn-lg btn-outline-light">Start Learning</button>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <img src="banner-image.png" alt="banner.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- code for couses -->
+        <div class="courses">
+            <div class="text-center">
+                <h1>Our Courses</h1>
+                <ul class="course-list">
+                    <li>
+                        <i class="fa fa-html5"></i>
+                        <h3>HTML</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">Read More...</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-css3"></i>
+                        <h3>CSS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">Read More...</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-database"></i>
+                        <h3>DATABASE</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">Read More...</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-github"></i>
+                        <h3>GITHUB</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">Read More...</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-dupal"></i>
+                        <h3>DRUPAl</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">Read More...</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- code for letstart -->
+        <div class="let-start text-center">
+            <h1 class="text-light">Lets start learning...</h1>
+            <a href="#" class="btn btn-outline-light btn-lg">Register</a>
+        </div>
+        <!-- code for projects -->
+        <div class="projects">
+            <h1 class="text-center">Projects</h1>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <br>
+            <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        HTML
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        CSS
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        JAVASCRIPT
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- code for companies -->
+        <div class="companies">
+            <h1 class="text-center text-light">Companies where our students are working...</h1>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active text-center">
+                    <ul class="companies-list">
+                        <li>
+                            <img src="c-logo1.png" alt="company name">
+                        </li>
+                        <li>
+                            <img src="c-logo2.png" alt="company name">
+                        </li>
+                        <li>
+                            <img src="c-logo3.png" alt="company name">
+                        </li>
+                        <li>
+                            <img src="c-logo4.png" alt="company name">
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="carousel-item text-center">
+                    <ul class="companies-list">
+                        <li>
+                            <img src="c-logo5.png" alt="company name">
+                        </li>
+                        <li>
+                            <img src="c-logo6.png" alt="company name">
+                        </li>
+                        <li>
+                            <img src="c-logo7.png" alt="company name">
+                        </li>
+                        <li>
+                            <img src="c-logo8.png" alt="company name">
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+        <!-- code for footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="logo.png" alt="logo" height="80px">
+                        <p class="text-light">LearnVern is a training portal where anyone can learn any course in vernacular languages for free.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h3 class="text-light">Courses</h3>
+                        <div class="courseList">
+                            <ul>
+                                <li><a class="text-light" href="#">Business</a></li>
+                                <li><a class="text-light" href="#">Networking</a></li>
+                                <li><a class="text-light" href="#">Designing</a></li>
+                                <li><a class="text-light" href="#">Software</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <h3 class="text-light">Company</h3>
+                        <div class="courseList">
+                            <ul>
+                                <li><a class="text-light" href="#">About</a></li>
+                                <li><a class="text-light" href="#">Certifications</a></li>
+                                <li><a class="text-light" href="#">Forum</a></li>
+                                <li><a class="text-light" href="#">Career</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="support">
+                            <h3 class="text-light">Support </h3>
+                            <a href="#"><i class="fa fa-phone">&nbsp;8437444482</i></a>
+                            <a href="#"><i class="fa fa-envelope">&nbsp;info@learnver.com</i></a>
+                            <ul class="social-media">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
